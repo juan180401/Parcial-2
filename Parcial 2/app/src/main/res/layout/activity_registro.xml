@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="36dp"
+        android:text="DATOS"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="312dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="NOMBRE:"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#B3B3B3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/apellido"
+        android:layout_width="312dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:hint="APELLIDO:"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#B3B3B3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="312dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:hint="EMAIL:"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#B3B3B3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="312dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="260dp"
+        android:ems="10"
+        android:hint="USUARIO:"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#B3B3B3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/contra"
+        android:layout_width="312dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="320dp"
+        android:ems="10"
+        android:hint="CONTRASEÑA:"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#B3B3B3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/tipousuarreg"
+        android:layout_width="309dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="420dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="396dp"
+        android:text="TIPO DE USUARIO:"
+        android:textColor="#0C0C0C"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="228dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="496dp"
+        android:backgroundTint="#0052FF"
+        android:onClick="registrarusuario"
+        android:text="REGISTRARME"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="228dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="556dp"
+        android:backgroundTint="#FF0000"
+        android:onClick="volver"
+        android:text="VOLVER A LOGIN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

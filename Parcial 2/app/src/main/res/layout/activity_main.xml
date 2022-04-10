@@ -10,11 +10,13 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BIENVENIDO"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="36dp"
+        android:text="BIENVENID@"
         android:textColor="#0043FF"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="36dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button2"
@@ -23,7 +25,32 @@
         android:layout_marginStart="76dp"
         android:layout_marginTop="183dp"
         android:backgroundTint="#26FF00"
+        android:onClick="Agregar"
         android:text="AGREGAR NUEVO VEHICULO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="259dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="512dp"
+        android:backgroundTint="#26FF00"
+        android:onClick="AgregarUsuario"
+        android:text="AGREGAR NUEVO USUARIO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Usulog1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="107dp"
+        android:text="TextView"
+        android:textColor="#F60000"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

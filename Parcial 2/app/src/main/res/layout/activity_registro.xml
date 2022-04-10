@@ -24,7 +24,7 @@
         android:layout_width="312dp"
         android:layout_height="49dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="140dp"
         android:ems="10"
         android:hint="NOMBRE:"
         android:inputType="textPersonName"
@@ -34,41 +34,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/apellido"
+        android:id="@+id/CodiUsua"
         android:layout_width="312dp"
         android:layout_height="49dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="80dp"
         android:ems="10"
-        android:hint="APELLIDO:"
-        android:inputType="textPersonName"
-        android:textColor="#000000"
-        android:textColorHint="#B3B3B3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="312dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="200dp"
-        android:ems="10"
-        android:hint="EMAIL:"
-        android:inputType="textPersonName"
-        android:textColor="#000000"
-        android:textColorHint="#B3B3B3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/usuario"
-        android:layout_width="312dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="260dp"
-        android:ems="10"
-        android:hint="USUARIO:"
+        android:hint="CODIGO DE USUARIO:"
         android:inputType="textPersonName"
         android:textColor="#000000"
         android:textColorHint="#B3B3B3"
@@ -80,7 +52,7 @@
         android:layout_width="312dp"
         android:layout_height="49dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="380dp"
         android:ems="10"
         android:hint="CONTRASEÑA:"
         android:inputType="textPassword"
@@ -94,31 +66,7 @@
         android:layout_width="309dp"
         android:layout_height="57dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="420dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="396dp"
-        android:text="TIPO DE USUARIO:"
-        android:textColor="#0C0C0C"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="228dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="496dp"
-        android:backgroundTint="#0052FF"
-        android:onClick="registrarusuario"
-        android:text="REGISTRARME"
+        android:layout_marginTop="480dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -127,10 +75,76 @@
         android:layout_width="228dp"
         android:layout_height="59dp"
         android:layout_marginStart="88dp"
-        android:layout_marginTop="556dp"
+        android:layout_marginTop="616dp"
         android:backgroundTint="#FF0000"
         android:onClick="volver"
-        android:text="VOLVER A LOGIN"
+        android:text="VOLVER"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="456dp"
+        android:text="TIPO DE USUARIO:"
+        android:textColor="#0C0C0C"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="312dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="260dp"
+        android:ems="10"
+        android:hint="EMAIL:"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#B3B3B3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="312dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="320dp"
+        android:ems="10"
+        android:hint="USUARIO:"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#B3B3B3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="228dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="556dp"
+        android:backgroundTint="#0052FF"
+        android:onClick="registrarusuario"
+        android:text="REGISTRARME"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/apellido"
+        android:layout_width="312dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:hint="APELLIDO:"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#B3B3B3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

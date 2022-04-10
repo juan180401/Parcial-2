@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarsMotors">
         <activity
+            android:name=".AgregarCarro2"
+            android:exported="false" />
+        <activity
             android:name=".AgregarCarro"
             android:exported="false" />
         <activity
@@ -26,7 +29,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

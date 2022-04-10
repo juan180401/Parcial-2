@@ -34,6 +34,7 @@ public class Login extends AppCompatActivity {
          if (fila.moveToFirst()&&use1.equals(fila.getString(0))&&ti.equals(fila.getString(1))){
              carsmotors.close();
              Intent aut=new Intent(this, MainActivity.class);
+             aut.putExtra("uslog", use1);
              startActivity(aut);
              usuar.setText("");
              passw.setText("");

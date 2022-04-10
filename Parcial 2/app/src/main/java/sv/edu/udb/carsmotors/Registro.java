@@ -15,12 +15,13 @@ import android.widget.Toast;
 public class Registro extends AppCompatActivity {
     String elementos[]={"Cliente","Administrador"};
     Spinner tipousua;
-    EditText nom,apell,corre,usuar,passw;
+    EditText codus,nom,apell,corre,usuar,passw;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
+        codus=(EditText) findViewById(R.id.CodiUsua);
         nom=(EditText) findViewById(R.id.nombre);
         apell=(EditText) findViewById(R.id.apellido);
         corre=(EditText) findViewById(R.id.email);
@@ -33,6 +34,7 @@ public class Registro extends AppCompatActivity {
 public void registrarusuario (View view){
     BaseDeDatos regis = new BaseDeDatos(this,"cars", null, 1);
     SQLiteDatabase carsmotors= regis.getWritableDatabase();
+    String cod1 = codus.getText().toString();
     String nam = nom.getText().toString();
     String ape = apell.getText().toString();
     String em = corre.getText().toString();
@@ -40,6 +42,7 @@ public void registrarusuario (View view){
     String cont = passw.getText().toString();
     String tius = tipousua.getSelectedItem().toString();
     ContentValues regis1 = new ContentValues();
+    regis1.put("idusuario", cod1);
     regis1.put("nombres", nam);
     regis1.put("apellidos", ape);
     regis1.put("email", em);
@@ -48,14 +51,13 @@ public void registrarusuario (View view){
     regis1.put("tipo", tius);
     carsmotors.insert("usuario", null, regis1);
     carsmotors.close();
+    codus.setText("");
     nom.setText("");
     apell.setText("");
     corre.setText("");
     usuar.setText("");
     passw.setText("");
     Toast.makeText(this, "Se cargaron los datos del nuevo usuario",Toast.LENGTH_SHORT).show();
-    Intent log=new Intent(this, Login.class);
-    startActivity(log);
 }
     public void volver (View view)
     {

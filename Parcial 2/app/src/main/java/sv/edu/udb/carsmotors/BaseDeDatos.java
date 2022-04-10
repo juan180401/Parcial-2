@@ -12,12 +12,12 @@ public class BaseDeDatos extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase carsmotors) {
-        carsmotors.execSQL("create table usuario(idusuario integer primary key autoincrement,nombres text,apellidos text, email text, user text, password text, tipo text)");
-        carsmotors.execSQL("create table marcas(idmarcas integer primary key autoincrement,nombre text)");
-        carsmotors.execSQL("create table colores(idcolores integer primary key autoincrement,descripcion text)");
-        carsmotors.execSQL("create table tipo_automovil(idtipoautomovil integer primary key autoincrement,descripcion text)");
-        carsmotors.execSQL("create table automovil(idautomovil integer primary key autoincrement,modelo text,numero_vin text,numero_chasis text,numero_motor text,numero_asientos integer, anio year,capacidad_asientos int, precio decimal, URI_IMG text, descripcion text, idmarcas references marcas(idmarcas), idtipoautomovil references tipo_automovil(idtipoautomovil),idcolores references colores(idcolores))");
-        carsmotors.execSQL("create table favoritos_automovil(idfavoritosautomovil integer primary key autoincrement,fecha_agregado timestamp,idusuario references usuario(idusuario),idmarcas references automovil(idautomovil) )");
+        carsmotors.execSQL("create table usuario(idusuario text primary key,nombres text,apellidos text, email text, user text, password text, tipo text)");
+        carsmotors.execSQL("create table marcas(idmarcas text primary key,nombre text)");
+        carsmotors.execSQL("create table colores(idcolores text primary key,descripcion text)");
+        carsmotors.execSQL("create table tipo_automovil(idtipoautomovil text primary key,descripcion text)");
+        carsmotors.execSQL("create table automovil(idautomovil text primary key,modelo text,numero_vin text,numero_chasis text,numero_motor text,numero_asientos text, anio text,capacidad_asientos text, precio text, URI_IMG text, descripcion text, idmarcas text references marcas(idmarcas), idtipoautomovil text references tipo_automovil(idtipoautomovil),idcolores text references colores(idcolores))");
+        carsmotors.execSQL("create table favoritos_automovil(idfavoritosautomovil text primary key,fecha_agregado text,idusuario text references usuario(idusuario),idmarcas text references automovil(idautomovil) )");
     }
 
     @Override

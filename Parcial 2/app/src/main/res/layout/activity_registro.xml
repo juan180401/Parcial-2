@@ -83,7 +83,7 @@
         android:layout_marginTop="320dp"
         android:ems="10"
         android:hint="CONTRASEÑA:"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:textColor="#000000"
         android:textColorHint="#B3B3B3"
         app:layout_constraintStart_toStartOf="parent"

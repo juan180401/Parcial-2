@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Collections;
@@ -19,10 +20,15 @@ public class ModificarUsuario extends AppCompatActivity {
     String elementos2[]={"Cliente","Administrador"};
     Spinner tipousua2;
     EditText codus2,nom2,apell2,corre2,usuar2,passw2;
+    TextView us;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modificar_usuario);
+        Bundle bundle = getIntent().getExtras();
+        String ul12 = bundle.getString("uslog");
+        us=(TextView)  findViewById(R.id.usulog7);
+        us.setText(ul12);
         codus2=(EditText) findViewById(R.id.cod2);
         nom2=(EditText) findViewById(R.id.nombre2);
         apell2=(EditText) findViewById(R.id.apellido2);
@@ -91,7 +97,6 @@ public class ModificarUsuario extends AppCompatActivity {
         }
     }
     public void volver (View view){
-
         finish();
     }
 }

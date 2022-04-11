@@ -59,5 +59,6 @@ EditText cod, mar1,col1,tipaut1;
         carr1.putExtra("idref1",cod1);
         carr1.putExtra("uslog", ul12);
         startActivity(carr1);
+        finish();
     }
 }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/registrocars"
     tools:context=".RegistroDeCarrosPorBusqueda">
 
     <EditText
@@ -15,6 +16,8 @@
         android:ems="10"
         android:hint="Color:"
         android:inputType="textPersonName"
+        android:textColor="#FFFB00"
+        android:textColorHint="#FFFB00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,6 +30,8 @@
         android:ems="10"
         android:hint="Codigo:"
         android:inputType="number"
+        android:textColor="#FFFB00"
+        android:textColorHint="#FFFB00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,11 +39,12 @@
         android:id="@+id/usulog6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="68dp"
         android:text="TextView"
         android:textColor="#FF0101"
-        android:textSize="20sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,6 +57,8 @@
         android:ems="10"
         android:hint="Modelo:"
         android:inputType="textPersonName"
+        android:textColor="#FFFB00"
+        android:textColorHint="#FFFB00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -63,6 +71,8 @@
         android:ems="10"
         android:hint="Precio:"
         android:inputType="textPersonName"
+        android:textColor="#FFFB00"
+        android:textColorHint="#FFFB00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -70,11 +80,12 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="28dp"
         android:text="REGISTRO DE AUTOS"
-        android:textColor="#0543FB"
-        android:textSize="20sp"
+        android:textColor="#FBFBFB"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -84,6 +95,7 @@
         android:layout_height="75dp"
         android:layout_marginStart="128dp"
         android:layout_marginTop="576dp"
+        android:backgroundTint="#F60000"
         android:onClick="volv"
         android:text="VOLVER"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,6 +107,7 @@
         android:layout_height="75dp"
         android:layout_marginStart="128dp"
         android:layout_marginTop="488dp"
+        android:backgroundTint="#005EFF"
         android:onClick="verificarregis"
         android:text="VERIFICAR REGISTROS"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,6 +122,8 @@
         android:ems="10"
         android:hint="Marca:"
         android:inputType="textPersonName"
+        android:textColor="#FFFB00"
+        android:textColorHint="#FFFB00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

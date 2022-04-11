@@ -4,29 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/carro"
     tools:context=".ModificarCarro2">
 
     <EditText
         android:id="@+id/modelo2"
         android:layout_width="278dp"
-        android:layout_height="40dp"
+        android:layout_height="43dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="112dp"
         android:ems="10"
         android:hint="Modelo:"
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFB00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/motor2"
         android:layout_width="278dp"
-        android:layout_height="40dp"
+        android:layout_height="43dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="256dp"
         android:ems="10"
         android:hint="Numero De Motor:"
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFB00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,6 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="112dp"
         android:layout_marginTop="620dp"
+        android:backgroundTint="#FA0000"
         android:onClick="guardarauto1"
         android:text=" GUARDAR CAMBIOS"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,96 +50,112 @@
     <EditText
         android:id="@+id/asientos2"
         android:layout_width="278dp"
-        android:layout_height="40dp"
+        android:layout_height="43dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="300dp"
         android:ems="10"
         android:hint="Numero De Asientos:"
         android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFB00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/descr2"
         android:layout_width="278dp"
-        android:layout_height="40dp"
+        android:layout_height="43dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="548dp"
         android:ems="10"
         android:hint="Descripcion:"
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFB00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/capaasien2"
         android:layout_width="278dp"
-        android:layout_height="40dp"
+        android:layout_height="43dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="404dp"
         android:ems="10"
         android:hint="Capacidad De Asientos:"
         android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFB00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/año2"
         android:layout_width="278dp"
-        android:layout_height="40dp"
+        android:layout_height="43dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="352dp"
         android:ems="10"
         android:hint="Año:"
         android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFB00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/chasis2"
         android:layout_width="278dp"
-        android:layout_height="40dp"
+        android:layout_height="43dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="208dp"
         android:ems="10"
         android:hint="Numero De Chasis:"
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFB00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/urimg2"
         android:layout_width="278dp"
-        android:layout_height="40dp"
+        android:layout_height="43dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="500dp"
         android:ems="10"
         android:hint="URI IMG:"
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFB00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/precio2"
         android:layout_width="278dp"
-        android:layout_height="40dp"
+        android:layout_height="43dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="452dp"
         android:ems="10"
         android:hint="Precio:"
         android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFB00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/vin2"
         android:layout_width="278dp"
-        android:layout_height="40dp"
+        android:layout_height="43dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="160dp"
         android:ems="10"
         android:hint="Numero De Vin:"
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFB00"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -141,11 +163,12 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="16dp"
         android:text="MODIFICAR AUTO"
-        android:textColor="#0543FB"
-        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -153,11 +176,12 @@
         android:id="@+id/usulog3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="56dp"
         android:text="TextView"
         android:textColor="#FF0101"
-        android:textSize="20sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

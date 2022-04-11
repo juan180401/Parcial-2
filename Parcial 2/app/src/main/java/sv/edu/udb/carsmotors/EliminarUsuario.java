@@ -63,11 +63,6 @@ public class EliminarUsuario extends AppCompatActivity {
         ap3.setText("");
     }
     public void volv (View view){
-        Intent vol=new Intent(this, MainActivity.class);
-        Bundle bundle = getIntent().getExtras();
-        String ul12 = bundle.getString("uslog");
-        vol.putExtra("uslog", ul12);
-        startActivity(vol);
         finish();
     }
 }

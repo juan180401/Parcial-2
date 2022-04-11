@@ -79,10 +79,6 @@ public class AgregarCarro2 extends AppCompatActivity {
         uri.setText("");
         descrip1.setText("");
         Toast.makeText(this, "Se guardaron los datos correctamente",Toast.LENGTH_SHORT).show();
-        Intent ret=new Intent(this, MainActivity.class);
-        String ul12 = bundle.getString("uslog");
-        ret.putExtra("uslog", ul12);
-        startActivity(ret);
         finish();
     }
 }

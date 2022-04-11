@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/usuario"
     tools:context=".EliminarUsuario">
 
     <Button
@@ -59,7 +60,8 @@
         android:layout_marginTop="72dp"
         android:text="TextView"
         android:textColor="#FF0101"
-        android:textSize="20sp"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,6 +74,7 @@
         android:ems="10"
         android:hint="Nombre:"
         android:inputType="textPersonName"
+        android:textColorHint="#424141"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -84,6 +87,7 @@
         android:ems="10"
         android:hint="Apellido:"
         android:inputType="textPersonName"
+        android:textColorHint="#424141"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -96,6 +100,7 @@
         android:ems="10"
         android:hint="Usuario:"
         android:inputType="textPersonName"
+        android:textColorHint="#424141"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -108,6 +113,7 @@
         android:ems="10"
         android:hint="Codigo:"
         android:inputType="number"
+        android:textColorHint="#424141"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

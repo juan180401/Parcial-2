@@ -4,64 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondolog"
     tools:context=".Login">
 
-<LinearLayout
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-android:padding="48dp">
-
-<TextView
-    android:id="@+id/bienvenida"
-    android:layout_width="wrap_content"
-    android:layout_height="0dp"
-    android:layout_gravity="center_horizontal"
-    android:layout_weight="2"
-    android:text="INICIO DE SESIÓN"
-    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <EditText
-        android:id="@+id/logusuario"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="1"
-        android:hint="Ingrese Usuario"
-        android:inputType="textPersonName" />
+        android:layout_height="match_parent"
+        android:background="@drawable/fondolog"
+        android:orientation="vertical"
+        android:padding="48dp">
 
-    <EditText
-        android:id="@+id/logcontra"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="1"
-        android:ems="10"
-        android:hint="Ingrese Contraseña"
-        android:inputType="textPassword"
-        />
+        <TextView
+            android:id="@+id/bienvenida"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="2"
+            android:text="INICIO DE SESIÓN"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp" />
 
-<Button
-    android:id="@+id/btniniciar"
-    android:layout_width="match_parent"
-    android:layout_height="60dp"
-    android:layout_gravity="center_horizontal"
-    android:layout_weight="0.1"
-    android:backgroundTint="#6A6C6A"
-    android:onClick="autenticar"
-    android:text="Iniciar Sesion" />
+        <EditText
+            android:id="@+id/logusuario"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:hint="Ingrese Usuario"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
 
-    <TextView
-        android:id="@+id/verificador"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_gravity="center|center_horizontal"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:text="¿No tienes una cuenta? Haz click aqui para crear una cuenta"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:onClick="registrar"
-        android:textColor="#0E8AEE" />
-</LinearLayout>
+        <EditText
+            android:id="@+id/logcontra"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Ingrese Contraseña"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btniniciar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.1"
+            android:backgroundTint="#6A6C6A"
+            android:onClick="autenticar"
+            android:text="Iniciar Sesion" />
+
+        <TextView
+            android:id="@+id/verificador"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="registrar"
+            android:text="¿No tienes una cuenta? Haz click aqui para crear una cuenta"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FBFBFB" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

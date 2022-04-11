@@ -83,10 +83,6 @@ public void guardarauto1 (View view){
     carsmotors.close();
     if (moglo == 1) {
         Toast.makeText(this, "Modificacion Completada Satisfactoriamente", Toast.LENGTH_SHORT).show();
-        Intent car3=new Intent(this, MainActivity.class);
-        String ul12 = bundle.getString("uslog");
-        car3.putExtra("uslog", ul12);
-        startActivity(car3);
         mod2.setText("");
         vin2.setText("");
         chas2.setText("");

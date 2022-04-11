@@ -159,11 +159,22 @@
     <Button
         android:id="@+id/button14"
         android:layout_width="191dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="552dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="608dp"
         android:onClick="terminar"
         android:text="CERRAR SESION"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="191dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="516dp"
+        android:onClick="lista"
+        android:text="REGISTRO DE VEHICULOS"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

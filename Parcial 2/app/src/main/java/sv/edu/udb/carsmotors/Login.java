@@ -43,9 +43,10 @@ public class Login extends AppCompatActivity {
          } else if (fila.moveToFirst()&&use1.equals(fila.getString(0))&&ti1.equals(fila.getString(1)))
          {
              carsmotors.close();
-             //para mientras
-             Intent aut1=new Intent(this, Registro.class);
-             startActivity(aut1);
+             //VER UNICAMENTE REGISTRO DE AUTOS
+             Intent lis=new Intent(this, RegistroDeCarrosPorBusqueda.class);
+             lis.putExtra("uslog", use1);
+             startActivity(lis);
              usuar.setText("");
              passw.setText("");
     } else

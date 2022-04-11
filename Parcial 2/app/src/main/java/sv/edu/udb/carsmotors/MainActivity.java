@@ -63,4 +63,12 @@ TextView us;
 
     }
 
+    public void lista (View view){
+        Bundle bundle = getIntent().getExtras();
+        String ul12 = bundle.getString("uslog");
+        Intent lis=new Intent(this, RegistroDeCarrosPorBusqueda.class);
+        lis.putExtra("uslog", ul12);
+        startActivity(lis);
+
+    }
 }

@@ -48,14 +48,6 @@ EditText cod, mar1,col1,tipaut1;
         carsmotors.insert("marcas", null, marcadat);
         carsmotors.insert("colores", null, colordat);
         carsmotors.insert("tipo_automovil", null, tipodat);
-
-        //llevarnos id para llaves foraneas
-        /*Cursor ma12 = carsmotors.rawQuery("SELECT idmarcas FROM marcas WHERE nombre =" + mar2, null);
-        Cursor co12 = carsmotors.rawQuery("SELECT idcolores FROM colores WHERE descripcion =" + col2, null);
-        Cursor autip = carsmotors.rawQuery("SELECT idtipoautomovil FROM tipo_automovil WHERE descripcion =" + tipaut2, null);
-        Integer idma = Integer.parseInt(ma12.getString(0));
-        Integer idcol = Integer.parseInt(co12.getString(0));
-        Integer idti = Integer.parseInt(autip.getString(0));*/
         carsmotors.close();
         cod.setText("");
         mar1.setText("");

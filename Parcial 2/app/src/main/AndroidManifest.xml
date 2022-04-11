@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarsMotors">
         <activity
+            android:name=".EliminarCarro"
+            android:exported="false" />
+        <activity
+            android:name=".ModificarCarro2"
+            android:exported="false" />
+        <activity
+            android:name=".ModificarCarro"
+            android:exported="false" />
+        <activity
             android:name=".AgregarCarro2"
             android:exported="false" />
         <activity

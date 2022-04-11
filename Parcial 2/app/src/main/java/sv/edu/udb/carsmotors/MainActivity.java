@@ -29,4 +29,18 @@ TextView us;
         Intent agreus=new Intent(this, Registro.class);
         startActivity(agreus);
     }
+    public void modificar (View view){
+        Bundle bundle = getIntent().getExtras();
+        String ul12 = bundle.getString("uslog");
+        Intent modi=new Intent(this, ModificarCarro.class);
+        modi.putExtra("uslog", ul12);
+        startActivity(modi);
+    }
+    public void eliminarauto (View view){
+        Bundle bundle = getIntent().getExtras();
+        String ul12 = bundle.getString("uslog");
+        Intent eli=new Intent(this, EliminarCarro.class);
+        eli.putExtra("uslog", ul12);
+        startActivity(eli);
+    }
 }

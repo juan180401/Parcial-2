@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +21,7 @@ public class ModificarCarro2 extends AppCompatActivity {
         setContentView(R.layout.activity_modificar_carro2);
         Bundle bundle = getIntent().getExtras();
         String ul12 = bundle.getString("uslog");
+        String codig2= bundle.getString("idref2");
         us=(TextView)  findViewById(R.id.usulog3);
         us.setText(ul12);
         mod2=(EditText) findViewById(R.id.modelo2);
@@ -32,7 +34,23 @@ public class ModificarCarro2 extends AppCompatActivity {
         pre2=(EditText) findViewById(R.id.precio2);
         uri2=(EditText) findViewById(R.id.urimg2);
         descrip2=(EditText) findViewById(R.id.descr2);
-    }
+
+        //capturando datos del vehiculo a actualizar
+        BaseDeDatos cop12 = new BaseDeDatos(this,"cars", null, 1);
+        SQLiteDatabase carsmotors= cop12.getWritableDatabase();
+        Cursor conauto = carsmotors.rawQuery("select modelo,numero_vin,numero_chasis,numero_motor,numero_asientos,anio,capacidad_asientos,precio,URI_IMG,descripcion from automovil where idautomovil='" + codig2+"'", null);
+        if (conauto.moveToFirst()) {
+            mod2.setText(conauto.getString(0));
+            vin2.setText(conauto.getString(1));
+            chas2.setText(conauto.getString(2));
+            motor2.setText(conauto.getString(3));
+            asie2.setText(conauto.getString(4));
+            year2.setText(conauto.getString(5));
+            capasie2.setText(conauto.getString(6));
+            pre2.setText(conauto.getString(7));
+            uri2.setText(conauto.getString(8));
+            descrip2.setText(conauto.getString(9));
+        }    }
 public void guardarauto1 (View view){
     BaseDeDatos sav2 = new BaseDeDatos(this,"cars", null, 1);
     SQLiteDatabase carsmotors= sav2.getWritableDatabase();
@@ -69,6 +87,17 @@ public void guardarauto1 (View view){
         String ul12 = bundle.getString("uslog");
         car3.putExtra("uslog", ul12);
         startActivity(car3);
+        mod2.setText("");
+        vin2.setText("");
+        chas2.setText("");
+        motor2.setText("");
+        asie2.setText("");
+        year2.setText("");
+        capasie2.setText("");
+        pre2.setText("");
+        uri2.setText("");
+        descrip2.setText("");
+        finish();
     } else
         Toast.makeText(this, "Error Al Modificar",
                 Toast.LENGTH_SHORT).show();

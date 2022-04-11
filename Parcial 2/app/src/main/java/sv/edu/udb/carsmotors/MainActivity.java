@@ -43,4 +43,24 @@ TextView us;
         eli.putExtra("uslog", ul12);
         startActivity(eli);
     }
+    public void modificarusua (View view){
+        Bundle bundle = getIntent().getExtras();
+        String ul12 = bundle.getString("uslog");
+        Intent modi=new Intent(this, ModificarUsuario.class);
+        modi.putExtra("uslog", ul12);
+        startActivity(modi);
+
+    }
+    public void eliminarusua (View view){
+        Bundle bundle = getIntent().getExtras();
+        String ul12 = bundle.getString("uslog");
+        Intent elius=new Intent(this, EliminarUsuario.class);
+        elius.putExtra("uslog", ul12);
+        startActivity(elius);
+    }
+    public void terminar (View view){
+        finish();
+
+    }
+
 }

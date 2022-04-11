@@ -130,7 +130,7 @@
         android:layout_marginTop="556dp"
         android:backgroundTint="#0052FF"
         android:onClick="registrarusuario"
-        android:text="REGISTRARME"
+        android:text="REGISTRAR"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

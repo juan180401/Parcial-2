@@ -49,8 +49,7 @@ public class Login extends AppCompatActivity {
              usuar.setText("");
              passw.setText("");
     } else
-            Toast.makeText(this, "Usuario o contraseña incorrecta",
-    Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Usuario o contraseña incorrecta", Toast.LENGTH_SHORT).show();
          usuar.setText("");
          passw.setText("");
         carsmotors.close();

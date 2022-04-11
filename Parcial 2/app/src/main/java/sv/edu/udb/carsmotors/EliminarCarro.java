@@ -69,5 +69,6 @@ public class EliminarCarro extends AppCompatActivity {
         String ul12 = bundle.getString("uslog");
         vol.putExtra("uslog", ul12);
         startActivity(vol);
+        finish();
     }
     }

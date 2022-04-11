@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarsMotors">
         <activity
+            android:name=".EliminarUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".ModificarUsuario"
+            android:exported="false" />
+        <activity
             android:name=".EliminarCarro"
             android:exported="false" />
         <activity

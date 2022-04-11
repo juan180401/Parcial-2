@@ -4,68 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EliminarCarro">
+    tools:context=".EliminarUsuario">
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/button20"
         android:layout_width="150dp"
         android:layout_height="47dp"
         android:layout_marginStart="128dp"
         android:layout_marginTop="416dp"
-        android:onClick="verificar1"
+        android:onClick="verificar2"
         android:text="VERIFICAR"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/color3"
-        android:layout_width="278dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="260dp"
-        android:ems="10"
-        android:hint="Color:"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/codigo3"
-        android:layout_width="278dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="124dp"
-        android:ems="10"
-        android:hint="Codigo:"
-        android:inputType="number"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/marca3"
-        android:layout_width="278dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="192dp"
-        android:ems="10"
-        android:hint="Marca:"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/button21"
         android:layout_width="150dp"
         android:layout_height="47dp"
         android:layout_marginStart="128dp"
         android:layout_marginTop="484dp"
-        android:onClick="eliminar"
+        android:onClick="eliminarus"
         android:text="ELIMINAR"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/button22"
         android:layout_width="150dp"
         android:layout_height="47dp"
         android:layout_marginStart="128dp"
@@ -76,7 +40,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/usulog4"
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="32dp"
+        android:text="ELIMINAR USUARIO"
+        android:textColor="#0543FB"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/usulog5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="164dp"
@@ -87,27 +63,51 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="32dp"
-        android:text="ELIMINAR AUTO"
-        android:textColor="#0543FB"
-        android:textSize="20sp"
+    <EditText
+        android:id="@+id/nom4"
+        android:layout_width="278dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="260dp"
+        android:ems="10"
+        android:hint="Nombre:"
+        android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/modelo3"
+        android:id="@+id/apell4"
         android:layout_width="278dp"
         android:layout_height="52dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="328dp"
         android:ems="10"
-        android:hint="Modelo:"
+        android:hint="Apellido:"
         android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usua4"
+        android:layout_width="278dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="192dp"
+        android:ems="10"
+        android:hint="Usuario:"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/codigo4"
+        android:layout_width="278dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:hint="Codigo:"
+        android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

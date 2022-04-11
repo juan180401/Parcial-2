@@ -83,5 +83,6 @@ public class AgregarCarro2 extends AppCompatActivity {
         String ul12 = bundle.getString("uslog");
         ret.putExtra("uslog", ul12);
         startActivity(ret);
+        finish();
     }
 }

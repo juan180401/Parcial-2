@@ -72,6 +72,11 @@ public class ModificarCarro extends AppCompatActivity {
             car2.putExtra("idref2",codig);
             car2.putExtra("uslog", ul12);
             startActivity(car2);
+            cod2.setText("");
+            mar2.setText("");
+            col2.setText("");
+            tipaut2.setText("");
+            finish();
         } else
             Toast.makeText(this, "no existe el vehiculo con el código ingresado",
                     Toast.LENGTH_SHORT).show();
